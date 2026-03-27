@@ -136,7 +136,7 @@ h1, h2, h3, .logo, .hero-title {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('https://images.pexels.com/photos/1007574/pexels-photo-1007574.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover no-repeat;
+    background: url('../images/Background.png') center/cover no-repeat;
     filter: brightness(0.7);
     z-index: 0;
     animation: zoomBackground 20s ease-in-out infinite alternate;
