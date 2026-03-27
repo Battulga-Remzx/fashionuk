@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>British Style Chronicle | Victorian to Modern Fashion</title>
+    <meta name="description" content="Explore British fashion history from Victorian elegance to modern streetwear. Interactive quizzes for women's and men's Victorian fashion.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">BRITISH<span>STYLE</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#victorian">Victorian Era</a></li>
+                <li><a href="#modern">Modern Style</a></li>
+                <li><a href="#comparison">Then vs Now</a></li>
+                <li><a href="#quizzes">Quizzes</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Est. 1837</span>
+            <h1 class="hero-title">British Style:<br>Tradition Meets Modern Fashion</h1>
+            <p class="hero-sub">From Victorian corsets to London streetwear — discover the evolution of British elegance</p>
+            <div class="hero-buttons">
+                <a href="#victorian" class="btn-primary">Explore Styles <i class="fas fa-arrow-down"></i></a>
+                <a href="#quizzes" class="btn-outline-light">Take the Quizzes <i class="fas fa-brain"></i></a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <main>
+        <!-- Victorian Era Section with Expandable Women's & Men's Fashion -->
+        <section id="victorian" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Historical Fashion</span>
+                    <h2 class="section-title">👑 Victorian Era Fashion <span class="year-range">(1837–1901)</span></h2>
+                    <p class="section-subtitle">The age of elegance, structure, and cultural identity under Queen Victoria's reign</p>
+                </div>
+
+                <!-- Women's Fashion - Expandable Section with 8 Photos -->
+                <div class="expandable-section" id="womens-fashion">
+                    <div class="expandable-header" onclick="toggleSection('womens-content')">
+                        <div class="expandable-title">
+                            <i class="fas fa-female"></i>
+                            <h3>Women's Fashion <span class="photo-count">(7 looks)</span></h3>
+                        </div>
+                        <i class="fas fa-chevron-down expand-icon"></i>
+                    </div>
+                    <div class="expandable-content" id="womens-content">
+                        <!-- Vocabulary Cards Section -->
+                        <div class="vocabulary-section">
+                            <h4 class="vocab-title"><i class="fas fa-book-open"></i> Victorian Women's Fashion Vocabulary</h4>
+                            <div class="vocab-grid">
+                                <div class="vocab-card"><span class="vocab-word">BONNET</span><span class="vocab-meaning">a women's hat tied under the chin - эмэгтэй малгай</span></div>
+                                <div class="vocab-card"><span class="vocab-word">SLEEVES</span><span class="vocab-meaning">parts of a garment that cover the arms - ханцуй</span></div>
+                                <div class="vocab-card"><span class="vocab-word">LACE</span><span class="vocab-meaning">a delicate decorative fabric - тор</span></div>
+                                <div class="vocab-card"><span class="vocab-word">PETTICOAT</span><span class="vocab-meaning">a skirt worn under a dress - дотуур банзал</span></div>
+                                <div class="vocab-card"><span class="vocab-word">EMBROIDERY</span><span class="vocab-meaning">decorative stitching on fabric - хатгамал</span></div>
+                                <div class="vocab-card"><span class="vocab-word">PARASOL</span><span class="vocab-meaning">a light umbrella for sun protection - нарны шүхэр</span></div>
+                                <div class="vocab-card"><span class="vocab-word">SILHOUETTE</span><span class="vocab-meaning">the shape or outline of clothing - хувцасны хэлбэр</span></div>
+                                <div class="vocab-card"><span class="vocab-word">PATENT LEATHER</span><span class="vocab-meaning">shiny leather material - гялгар арьс</span></div>
+                                <div class="vocab-card"><span class="vocab-word">WHALEBONE</span><span class="vocab-meaning">a stiff material used in corsets - халимны яс</span></div>
+                                <div class="vocab-card"><span class="vocab-word">RIBBONS</span><span class="vocab-meaning">narrow strips of fabric for decoration - тууз</span></div>
+                                <div class="vocab-card"><span class="vocab-word">PAGODA SLEEVES</span><span class="vocab-meaning">wide sleeves that open at the end - өргөн амсартай ханцуй</span></div>
+                            </div>
+                        </div>
+                        
+                        <!-- 8 Photos Grid for Women's Fashion - ЗӨВ ТАЙЛБАРУУД -->
+                        <div class="photo-grid photo-grid-8">
+                            <div class="fashion-photo">
+                                <img src="./images/fi (1).jfif" alt="Victorian bonnet">
+                                <div class="photo-caption"><strong>Bonnet</strong><br>Traditional Victorian women's hat tied under the chin</div>
+                            </div>
+                            <div class="fashion-photo">
+                                <img src="./images/fi (7).jfif" alt="Victorian long dress">
+                                <div class="photo-caption"><strong>Long Dress</strong><br>Elegant floor-length gown with full skirt</div>
+                            </div>
+                            <div class="fashion-photo">
+                                <img src="./images/fi (6).jfif" alt="Victorian sleeves">
+                                <div class="photo-caption"><strong>Sleeves</strong><br>Decorative sleeves often with lace and embroidery</div>
+                            </div>
+                            <div class="fashion-photo">
+                                <img src="./images/fi (5).jfif" alt="Victorian corset">
+                                <div class="photo-caption"><strong>Corset</strong><br>Structured garment creating hourglass silhouette</div>
+                            </div>
+                            <div class="fashion-photo">
+                                <img src="./images/fi (4).jfif" alt="Victorian petticoat">
+                                <div class="photo-caption"><strong>Petticoat</strong><br>Underskirt worn to add volume to dresses</div>
+                            </div>
+                            <div class="fashion-photo">
+                                <img src="./images/fi (3).jfif" alt="Victorian boots">
+                                <div class="photo-caption"><strong>Boots</strong><br>Button-up leather boots for everyday wear</div>
+                            </div>
+                            <div class="fashion-photo">
+                                <img src="./images/fi (2).jfif" alt="Victorian parasol">
+                                <div class="photo-caption"><strong>Parasol</strong><br>Decorative umbrella for sun protection</div>
+                            </div>
+                        </div>
+                        
+                        <div class="fun-fact mini">
+                            <i class="fas fa-crown"></i>
+                            <p><strong>Did you know?</strong> Queen Victoria popularized the white wedding dress in 1840, a tradition that continues today! Victorian women often wore <strong>ribbons</strong> in their hair and carried <strong>parasols</strong> to protect their pale skin.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Men's Fashion - Expandable Section with 6 Photos -->
+                <div class="expandable-section" id="mens-fashion">
+                    <div class="expandable-header" onclick="toggleSection('mens-content')">
+                        <div class="expandable-title">
+                            <i class="fas fa-male"></i>
+                            <h3>Men's Fashion <span class="photo-count">(6 looks)</span></h3>
+                        </div>
+                        <i class="fas fa-chevron-down expand-icon"></i>
+                    </div>
+                    <div class="expandable-content" id="mens-content">
+                        <!-- Vocabulary Cards for Men's Fashion -->
+                        <div class="vocabulary-section">
+                            <h4 class="vocab-title"><i class="fas fa-book-open"></i> Victorian Men's Fashion Vocabulary</h4>
+                            <div class="vocab-grid">
+                                <div class="vocab-card"><span class="vocab-word">TOP HAT</span><span class="vocab-meaning">tall formal hat - өндөр малгай</span></div>
+                                <div class="vocab-card"><span class="vocab-word">BOWLER HAT</span><span class="vocab-meaning">hard felt hat with rounded crown - дугуй малгай</span></div>
+                                <div class="vocab-card"><span class="vocab-word">TAILCOAT</span><span class="vocab-meaning">formal coat with long tails at back - урт сүүлтэй хүрэм</span></div>
+                                <div class="vocab-card"><span class="vocab-word">WAISTCOAT</span><span class="vocab-meaning">sleeveless garment worn over shirt - хантааз</span></div>
+                                <div class="vocab-card"><span class="vocab-word">CRAVAT</span><span class="vocab-meaning">early form of necktie - хүзүүвч</span></div>
+                                <div class="vocab-card"><span class="vocab-word">POCKET WATCH</span><span class="vocab-meaning">watch carried in pocket - халаасны цаг</span></div>
+                                <div class="vocab-card"><span class="vocab-word">WALKING CANE</span><span class="vocab-meaning">elegant accessory stick - алхах таяг</span></div>
+                                <div class="vocab-card"><span class="vocab-word">FROCK COAT</span><span class="vocab-meaning">formal knee-length coat - албан ёсны хүрэм</span></div>
+                            </div>
+                        </div>
+                        
+                        <!-- 6 Photos Grid for Men's Fashion - ЗӨВ ТАЙЛБАРУУД -->
+                        <div class="photo-grid photo-grid-6">
+                            <div class="fashion-photo">
+                                <img src="./images/m (1).jfif" alt="Victorian shoes">
+                                <div class="photo-caption"><strong>Shoes</strong><br>Leather boots and Oxford shoes for formal wear</div>
+                            </div>
+                            <div class="fashion-photo">
+                                <img src="./images/m (2).jfif" alt="Victorian accessories">
+                                <div class="photo-caption"><strong>Accessories</strong><br>Cravat, pocket watch, and walking cane</div>
+                            </div>
+                            <div class="fashion-photo">
+                                <img src="./images/m (3).jfif" alt="Victorian hats">
+                                <div class="photo-caption"><strong>Hats</strong><br>Top hat and bowler hat - essential headwear</div>
+                            </div>
+                            <div class="fashion-photo">
+                                <img src="./images/m (4).jfif" alt="Victorian coats">
+                                <div class="photo-caption"><strong>Coats</strong><br>Tailcoat and frock coat for formal occasions</div>
+                            </div>
+                            <div class="fashion-photo">
+                                <img src="./images/m (5).jfif" alt="Victorian shirts and waistcoats">
+                                <div class="photo-caption"><strong>Shirts & Waistcoats</strong><br>High-collared shirts with elegant waistcoats</div>
+                            </div>
+                            <div class="fashion-photo">
+                                <img src="./images/m (6).jfif" alt="Victorian trousers">
+                                <div class="photo-caption"><strong>Trousers</strong><br>Straight or slightly fitted formal trousers</div>
+                            </div>
+                        </div>
+                        
+                        <div class="fun-fact mini">
+                            <i class="fas fa-clock"></i>
+                            <p><strong>Did you know?</strong> Pocket watches were often attached to a chain called a "fob" and were considered essential for any gentleman. Victorian men wore <strong>cravats</strong> as early neckties and carried <strong>walking canes</strong> as status symbols.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modern British Style - Expandable Section -->
+        <section id="modern" class="section modern-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Contemporary Fashion</span>
+                    <h2 class="section-title">🇬🇧 Modern British Style</h2>
+                    <p class="section-subtitle">Where heritage meets contemporary street culture</p>
+                </div>
+
+                <div class="expandable-section" id="modern-style">
+                    <div class="expandable-header" onclick="toggleSection('modern-content')">
+                        <div class="expandable-title">
+                            <i class="fas fa-tshirt"></i>
+                            <h3>Modern British Fashion</h3>
+                        </div>
+                        <i class="fas fa-chevron-down expand-icon"></i>
+                    </div>
+                    <div class="expandable-content" id="modern-content">
+                        <div class="card-grid">
+                            <div class="fashion-card modern-card">
+                                <div class="card-image">
+                                    <img src="https://images.pexels.com/photos/2065200/pexels-photo-2065200.jpeg?auto=compress&cs=tinysrgb&w=800" alt="London street style">
+                                    <div class="card-overlay"><span class="card-year">Street Style</span></div>
+                                </div>
+                                <div class="card-content">
+                                    <h4>Street Fashion</h4>
+                                    <p>From punk rock to casual chic, London's streets showcase bold self-expression. Influences from Mod, Punk, and Grime culture create unique urban aesthetics.</p>
+                                    <div class="card-tags"><span>Punk</span><span>Mod</span><span>Urban</span></div>
+                                </div>
+                            </div>
+                            <div class="fashion-card modern-card">
+                                <div class="card-image">
+                                    <img src="https://images.pexels.com/photos/1893347/pexels-photo-1893347.jpeg?auto=compress&cs=tinysrgb&w=800" alt="British trench coat">
+                                    <div class="card-overlay"><span class="card-year">Classic</span></div>
+                                </div>
+                                <div class="card-content">
+                                    <h4>Weather-Ready Style</h4>
+                                    <p>Iconic trench coats, wool scarves, Barbour jackets, and clever layering define the practical yet elegant British wardrobe for unpredictable weather.</p>
+                                    <div class="card-tags"><span>Trench Coat</span><span>Layering</span><span>Barbour</span></div>
+                                </div>
+                            </div>
+                            <div class="fashion-card modern-card">
+                                <div class="card-image">
+                                    <img src="https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Modern British fashion">
+                                    <div class="card-overlay"><span class="card-year">Fusion</span></div>
+                                </div>
+                                <div class="card-content">
+                                    <h4>Mix of Classic & Modern</h4>
+                                    <p>Young Britons blend Savile Row tailoring with sneakers, creating a unique fusion aesthetic that honors tradition while embracing contemporary comfort.</p>
+                                    <div class="card-tags"><span>Savile Row</span><span>Sneakers</span><span>Fusion</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fashion-highlight mini">
+                            <div class="highlight-icon"><i class="fas fa-calendar-alt"></i></div>
+                            <div class="highlight-content">
+                                <h3>London Fashion Week</h3>
+                                <p>One of the "Big Four" fashion weeks, London showcases emerging talent and established British designers like Alexander McQueen, Burberry, and Vivienne Westwood.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table Section -->
+        <section id="comparison" class="section comparison-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Evolution</span>
+                    <h2 class="section-title">Then vs Now: Fashion Evolution</h2>
+                    <p class="section-subtitle">How British style transformed from rigid elegance to creative freedom</p>
+                </div>
+                <div class="comparison-table-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr><th>Feature</th><th>Victorian Style (1837-1901)</th><th>Modern Style (2000-Present)</th> </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><i class="fas fa-bed"></i> Comfort</td><td class="victorian-cell">❌ Restrictive - corsets, tight collars</td><td class="modern-cell">✅ Comfort-first - stretch fabrics, athleisure</td> </tr>
+                            <tr><td><i class="fas fa-tshirt"></i> Structure</td><td class="victorian-cell">Highly formal, multi-layered, rigid</td><td class="modern-cell">Relaxed, unstructured, adaptable</td> </tr>
+                            <tr><td><i class="fas fa-palette"></i> Colors</td><td class="victorian-cell">Dark, muted, neutral tones</td><td class="modern-cell">Bold colors, pastels, eclectic mixes</td> </tr>
+                            <tr><td><i class="fas fa-chart-line"></i> Purpose</td><td class="victorian-cell">Display social status & wealth</td><td class="modern-cell">Self-expression & individuality</td> </tr>
+                            <tr><td><i class="fas fa-shoe-prints"></i> Key Items</td><td class="victorian-cell">Corsets, top hats, crinolines</td><td class="modern-cell">Denim, trainers, trench coats</td> </tr>
+                            <tr><td><i class="fas fa-venus-mars"></i> Gender Roles</td><td class="victorian-cell">Strictly defined</td><td class="modern-cell">Fluid, androgynous</td> </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quizzes Section - Women's and Men's Victorian Fashion Quizzes -->
+        <section id="quizzes" class="section quizzes-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Test Your Knowledge</span>
+                    <h2 class="section-title"><i class="fas fa-brain"></i> Victorian Fashion Quizzes</h2>
+                    <p class="section-subtitle">Test what you learned about Victorian women's and men's fashion from the 19th century</p>
+                </div>
+
+                <!-- Women's Fashion Quiz -->
+                <div class="quiz-card" id="womens-quiz">
+                    <div class="quiz-card-header">
+                        <div class="quiz-icon"><i class="fas fa-female"></i></div>
+                        <h3>Women's Victorian Fashion Quiz</h3>
+                    </div>
+                    <div class="quiz-card-content">
+                        <p>Test your knowledge about corsets, bonnets, crinolines, petticoats, parasols, and Victorian women's fashion vocabulary.</p>
+                        <button class="quiz-trigger-btn" onclick="startWomensQuiz()">Start Women's Quiz <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Men's Fashion Quiz -->
+                <div class="quiz-card" id="mens-quiz">
+                    <div class="quiz-card-header">
+                        <div class="quiz-icon"><i class="fas fa-male"></i></div>
+                        <h3>Men's Victorian Fashion Quiz</h3>
+                    </div>
+                    <div class="quiz-card-content">
+                        <p>Test your knowledge about top hats, tailcoats, waistcoats, cravats, pocket watches, and Victorian men's accessories.</p>
+                        <button class="quiz-trigger-btn" onclick="startMensQuiz()">Start Men's Quiz <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal for Women's Quiz -->
+        <div id="womensQuizModal" class="quiz-modal">
+            <div class="quiz-modal-content">
+                <span class="quiz-modal-close" onclick="closeWomensQuiz()">&times;</span>
+                <div id="womensQuizContainer"></div>
+            </div>
+        </div>
+
+        <!-- Modal for Men's Quiz -->
+        <div id="mensQuizModal" class="quiz-modal">
+            <div class="quiz-modal-content">
+                <span class="quiz-modal-close" onclick="closeMensQuiz()">&times;</span>
+                <div id="mensQuizContainer"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section"><h3>British Style Chronicle</h3><p>Exploring the evolution of fashion from Victorian elegance to modern streetwear.</p></div>
+                <div class="footer-section"><h4>Quick Links</h4><ul><li><a href="#victorian">Victorian Era</a></li><li><a href="#modern">Modern Style</a></li><li><a href="#quizzes">Victorian Quizzes</a></li></ul></div>
+                <div class="footer-section"><h4>Follow Us</h4><div class="social-icons"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-pinterest"></i></a><a href="#"><i class="fab fa-tiktok"></i></a></div></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2025 British Style Chronicle | Celebrating UK Fashion Heritage</p></div>
+        </div>
+    </footer>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>
