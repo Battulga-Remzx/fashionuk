@@ -269,7 +269,7 @@ h1, h2, h3, .logo, .hero-title {
 .section-title {
     font-size: 2.8rem;
     font-weight: 700;
-    color: #0B2B40;
+    color: #ffffff;
     margin-bottom: 16px;
 }
 
@@ -281,7 +281,7 @@ h1, h2, h3, .logo, .hero-title {
 
 .section-subtitle {
     font-size: 1.1rem;
-    color: #5A4A3A;
+    color: #ffffff;
     max-width: 700px;
     margin: 0 auto;
 }
@@ -887,4 +887,91 @@ h1, h2, h3, .logo, .hero-title {
     }
     .fashion-photo img { height: 220px; }
     .vocabulary-section { padding: 16px; }
+}
+
+/* Add these styles to your existing style.css file */
+
+/* Videos Section */
+.videos-section {
+    background: linear-gradient(135deg, #0B2B40 0%, #1A4A60 100%);
+    color: white;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.video-card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-caption {
+    padding: 20px;
+    text-align: center;
+}
+
+.video-caption h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #E9C46A;
+}
+
+.video-caption p {
+    font-size: 0.9rem;
+    color: #FDF8EC;
+    opacity: 0.9;
+}
+
+/* Responsive for videos */
+@media (max-width: 768px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .video-caption h3 {
+        font-size: 1.1rem;
+    }
+    
+    .video-caption p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-grid {
+        gap: 20px;
+    }
+    
+    .video-caption {
+        padding: 16px;
+    }
 }
