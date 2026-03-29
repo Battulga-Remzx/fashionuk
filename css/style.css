@@ -269,7 +269,7 @@ h1, h2, h3, .logo, .hero-title {
 .section-title {
     font-size: 2.8rem;
     font-weight: 700;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 16px;
 }
 
@@ -281,7 +281,7 @@ h1, h2, h3, .logo, .hero-title {
 
 .section-subtitle {
     font-size: 1.1rem;
-    color: #ffffff;
+    color: #000000;
     max-width: 700px;
     margin: 0 auto;
 }
@@ -893,7 +893,7 @@ h1, h2, h3, .logo, .hero-title {
 
 /* Videos Section */
 .videos-section {
-    background: linear-gradient(135deg, #0B2B40 0%, #1A4A60 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #c0c0c0 100%);
     color: white;
 }
 
@@ -973,5 +973,78 @@ h1, h2, h3, .logo, .hero-title {
     
     .video-caption {
         padding: 16px;
+    }
+}
+
+/* Video Cards inside Women's and Men's Fashion Sections */
+.video-card {
+    background: linear-gradient(135deg, #0B2B40 0%, #1A4A60 100%);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px 0 20px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.video-card-women {
+    border-left: 5px solid #E9C46A;
+}
+
+.video-card-men {
+    border-left: 5px solid #F4A261;
+}
+
+.video-title {
+    font-size: 1.3rem;
+    color: #E9C46A;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.video-title i {
+    font-size: 1.5rem;
+    color: #FF0000;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-description {
+    color: #FDF8EC;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Responsive for video cards */
+@media (max-width: 768px) {
+    .video-card {
+        padding: 15px;
+        margin: 20px 0;
+    }
+    
+    .video-title {
+        font-size: 1.1rem;
+    }
+    
+    .video-description {
+        font-size: 0.8rem;
     }
 }
